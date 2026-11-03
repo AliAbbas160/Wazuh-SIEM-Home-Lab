@@ -127,7 +127,14 @@ Developed and tested custom Wazuh detection rules.
 
 ## Detection Evidence
 
-### 1. Multiple Failed Windows Logins
+### 1. Wazuh SIEM Dashboard Overview
+
+Overview of collected security events, authentication activity,
+alert severity distribution and MITRE ATT&CK techniques.
+
+![Wazuh Dashboard Overview](Screenshots/wazuh-dashboard-overview.png)
+
+### 2. Multiple Failed Windows Logins
 
 Custom Rule ID: `100100`  
 Severity: Level 10  
@@ -135,7 +142,7 @@ MITRE ATT&CK: T1110 – Brute Force
 
 ![Failed Login Detection](Screenshots/failed-login-detection.png)
 
-### 2. PowerShell Invoke-Expression Detection
+### 3. PowerShell Invoke-Expression Detection
 
 Custom Rule ID: `100101`  
 Severity: Level 5  
