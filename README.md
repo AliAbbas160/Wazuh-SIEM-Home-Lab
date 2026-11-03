@@ -125,10 +125,23 @@ Developed and tested custom Wazuh detection rules.
 
 ## 📸 Screenshots
 
-Screenshots documenting the implementation and detection results will be added here.
+## Detection Evidence
 
-<!-- Add your actual screenshots here. -->
+### 1. Multiple Failed Windows Logins
 
+Custom Rule ID: `100100`  
+Severity: Level 10  
+MITRE ATT&CK: T1110 – Brute Force
+
+![Failed Login Detection](Screenshots/failed-login-detection.png)
+
+### 2. PowerShell Invoke-Expression Detection
+
+Custom Rule ID: `100101`  
+Severity: Level 5  
+MITRE ATT&CK: T1059.001 – PowerShell
+
+![PowerShell Detection](Screenshots/powershell-iex-detection.png)
 ---
 
 ## 🚀 Future Improvements
