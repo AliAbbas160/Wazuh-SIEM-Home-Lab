@@ -130,3 +130,27 @@ This exercise provided practical experience with:
 - Regular expression-based event matching.
 - MITRE ATT&CK mapping.
 - Security alert validation and investigation.
+
+## Detection Testing and Evidence
+
+Both custom detection rules were tested using controlled activities on the Windows endpoint.
+
+### Rule 100100 – Multiple Failed Windows Logins
+
+- Generated multiple failed login attempts for the same Windows account.
+- Verified that Wazuh triggered the custom rule.
+- Confirmed severity level 10 and MITRE ATT&CK technique T1110.
+
+![Failed Login Detection](../Screenshots/failed-login-detection.png)
+
+### Rule 100101 – PowerShell Invoke-Expression Detection
+
+- Executed a controlled PowerShell test using Invoke-Expression.
+- Verified that Wazuh detected the PowerShell script block.
+- Confirmed severity level 5 and MITRE ATT&CK technique T1059.001.
+
+![PowerShell Detection](../Screenshots/powershell-iex-detection.png)
+
+### Testing Note
+
+These tests were performed in a controlled lab environment. Detection of Invoke-Expression alone does not establish malicious activity; further investigation and contextual analysis are required.
