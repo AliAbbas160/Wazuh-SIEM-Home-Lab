@@ -79,7 +79,7 @@ Developed and tested custom Wazuh detection rules.
 
 | Rule ID | Detection | Severity |
 |:---:|:---|:---:|
-| `100100` | Repeated failed login attempts | Custom |
+| `100100` | Repeated failed login attempts | 10 |
 | `100101` | PowerShell Invoke-Expression activity | 5 |
 
 **Custom Rule 100101:**
@@ -96,6 +96,7 @@ Developed and tested custom Wazuh detection rules.
 | `T1057` | Process Discovery | PowerShell `Get-Process` activity |
 | `T1082` | System Information Discovery | PowerShell system environment queries |
 | `T1059.001` | PowerShell | PowerShell `Invoke-Expression` activity |
+| `T1110` | Brute Force | Repeated failed Windows logins |
 
 ---
 
